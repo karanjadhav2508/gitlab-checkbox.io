@@ -1,0 +1,3 @@
+build:
+  script:
+    - cd server-side/site && sudo npm install
