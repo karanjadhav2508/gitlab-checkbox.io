@@ -1,3 +1,10 @@
+before_script:
+  - apt-get update -qq
+  - curl -sL https://deb.nodesource.com/setup_9.x | bash -
+  - apt-get install -y -qq nodejs build-essential
+  - nodejs -v
+  - which nodejs
+
 build:
   script:
-    - cd server-side/site && sudo npm install
+    - cd server-side/site && npm install
